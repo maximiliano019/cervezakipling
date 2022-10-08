@@ -1,5 +1,5 @@
 Pagina publica:
-https://stately-buttercream-c74f31.netlify.app/
+https://cervezakipling.netlify.app/
 
 comandos git:
 git add *					-->	agrego todos los archivos modificados al repositorio intermedio local
