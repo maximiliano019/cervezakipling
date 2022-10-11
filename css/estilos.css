@@ -4,10 +4,11 @@
 }
 
 body {
-    background-image: url("../img/fondo_pantalla_cerveza.webp");
+  background-color: #be7e16;
+    /*background-image: url("../img/fondo_pantalla_cerveza.webp");
     background-repeat:no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cover;*/
   }
 
 header {
@@ -56,4 +57,4 @@ header {
   
   nav ul li:hover {
     background: #be7e16;
-  }
+  }  
