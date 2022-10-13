@@ -23,12 +23,11 @@ footer {
 }
 
 .ubicacion_logo {
-  text-align: right;
-  padding: 1%;
+  text-align: right; 
 }
 
 .tama_logo {
-  height:30px;
+  height:30px; 
 }
 
 nav {
