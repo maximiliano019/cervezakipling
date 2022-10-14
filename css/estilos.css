@@ -1,57 +1,71 @@
-header {
-  position: fixed;
-  background-color:black;
-  width: 100%;
-  top: 0px;
-  left: 0px;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Arial, sans-serif; 
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #be7e16;    
-  top: 1%;
-  position: absolute;
-  padding: 4%;
+  background-color: #be7e16;  
+  position: relative;  
+  width: 100%;
 }
 
-footer {
-  position: fixed;
-  background-color:black;  
-  width: 100%;  
-  bottom: 0px;
-  left: 0px;
-  text-align: center;  
-}
-
-.ubicacion_logo {
-  text-align: right; 
-}
-
-.tama_logo {
-  height:30px; 
-}
-
-nav {
-  float: left;  
+header{
+  background-color: black;  
+  position: fixed;  
+  width: 100%;
 }
 
 nav ul {
-  list-style: none;
-  overflow: hidden; 
+  list-style: none;    
 }
 
 nav ul li {
-  float: left;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+  display: inline-block;
+  padding: 10px;
 }
 
-nav ul li a {
-  padding: 5px;
-  display: block;
-  color: #fff;
+nav ul li a {  
+  color: white;
+  float: left;
   text-decoration: none;
+  display: block;
 }
-  
-nav ul li:hover {
+
+nav ul li a:hover {
   background: #be7e16;
+  color: black; 
+}
+
+.tama_logo {
+  height:25px;  
+}
+
+.tama_logo:hover {
+  animation-name: tam_Boton;
+  animation-duration: 1s;  
+}
+
+.ubicacion_logo {
+  float: right;
+  padding: 5px;
+}
+main {
+  padding-top: 3%;
+  width: 100%;
+}
+
+footer {
+  background-color:black;  
+  position: fixed; 
+  bottom: 0px;
+  width: 100%;
+  text-align: center; 
+}
+
+@keyframes tam_Boton {
+  from {height:25px;}
+  to {height:50px;}
 }
