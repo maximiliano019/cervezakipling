@@ -9,3 +9,6 @@ comandos git:
 git add *					-->	agrego todos los archivos modificados al repositorio intermedio local
 git commit -m "lo que quiera para el log"	-->	guardo todo al repositorio final local
 git push -u origin main				--> 	guardo todo a github (repositorio online)
+
+
+hola
