@@ -2,70 +2,64 @@
   padding: 0;
   margin: 0;
   border: 0;
-  font-family: Arial, sans-serif; 
+  font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #be7e16;  
-  position: relative;  
-  width: 100%;
-}
-
-header{
-  background-color: black;  
-  position: fixed;  
-  width: 100%;
-}
-
-nav ul {
-  list-style: none;    
-}
-
-nav ul li {
-  display: inline-block;
-  padding: 10px;
-}
-
-nav ul li a {  
-  color: white;
-  float: left;
-  text-decoration: none;
-  display: block;
-}
-
-nav ul li a:hover {
-  background: #be7e16;
-  color: black; 
-}
-
-.tama_logo {
-  height:25px;  
-}
-
-.tama_logo:hover {
-  animation-name: tam_Boton;
-  animation-duration: 1s;  
-}
-
-.ubicacion_logo {
-  float: right;
-  padding: 5px;
-}
-main {
-  padding-top: 3%;
+  background-color: #be7e16;
+  position: relative;
   width: 100%;
 }
 
 footer {
-  background-color:black;  
-  position: fixed; 
+  background-color:black;
+  position: fixed;
   bottom: 0px;
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
-@keyframes tam_Boton {
+div a img, nav ul li a img {
+  height:25px;
+}
+
+div a img:hover, nav ul li a img:hover {
+  animation-name: tamanioDinamicoImagen;
+  animation-duration: 1s;
+}
+
+@keyframes tamanioDinamicoImagen {
   from {height:25px;}
   to {height:50px;}
+}
+
+.topnav {
+  width: 100%;
+  position: fixed; 
+  text-align: center;
+  background-color: black;
+}
+
+.topnav a {
+  color: white;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #be7e16;
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+nav ul li, .topnav a {
+  display: inline-block;
+  padding: 10px;
 }
