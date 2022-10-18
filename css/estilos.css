@@ -8,8 +8,31 @@
 
 body {
   background-color: #be7e16;
-  position: relative;
   width: 100%;
+}
+
+header > * {
+  width: 100%;
+  position: fixed; 
+  text-align: center;
+  background-color: black;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+header a:hover {
+  background-color: #be7e16;
+  color: black;
+  font-weight: bold;
+}
+
+main {
+  padding: 10%; 
 }
 
 footer {
@@ -18,13 +41,15 @@ footer {
   bottom: 0px;
   width: 100%;
   text-align: center;
+  display: inline-block;
+  padding: 10px;
 }
 
-div a img, nav ul li a img {
+div a img {
   height:25px;
 }
 
-div a img:hover, nav ul li a img:hover {
+div a img:hover {
   animation-name: tamanioDinamicoImagen;
   animation-duration: 1s;
 }
@@ -34,32 +59,9 @@ div a img:hover, nav ul li a img:hover {
   to {height:50px;}
 }
 
-.topnav {
-  width: 100%;
-  position: fixed; 
-  text-align: center;
-  background-color: black;
-}
-
-.topnav a {
-  color: white;
-  text-decoration: none;
-}
-
-.topnav a:hover {
-  background-color: #be7e16;
-  color: black;
-  font-weight: bold;
-}
-
 @media screen and (max-width: 600px) {
-  .topnav a {
+  header a {
     float: none;
     width: 100%;
   }
-}
-
-nav ul li, .topnav a {
-  display: inline-block;
-  padding: 10px;
 }
