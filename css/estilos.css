@@ -45,11 +45,11 @@ footer {
   padding: 10px;
 }
 
-div a img {
+nav a img {
   height:25px;
 }
 
-div a img:hover {
+nav a img:hover {
   animation-name: tamanioDinamicoImagen;
   animation-duration: 1s;
 }
