@@ -9,6 +9,10 @@
 body {
   background-color: #be7e16;
   width: 100%;
+
+}
+.fondoC{
+  background-image: url(../img/img_contacto.jpg);
 }
 
 header > * {
@@ -64,4 +68,8 @@ nav a img:hover {
     float: none;
     width: 100%;
   }
+}
+
+.fondo_contacto{
+  background-image: url(../img/img_contacto.jpg);
 }
