@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: orange;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fondo_variedades{
+    background-image: url(../img/.jpg);
+}
+
+header > * {
+    width: 100%;
+    position: fixed; 
+    text-align: center;
+    background-color: black;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+header a:hover {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
+
+main {
+    padding: 7%; 
+}
+
+footer {
+    background-color:black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+}
+
+nav a img {
+    height:25px; 
+}
+
+
+nav a img:hover {
+    animation-name: tamanioDinamicoImagen;
+    animation-duration: 1s;
+}
+
+@keyframes tamanioDinamicoImagen {
+    from {height:25px;}
+    to {height:50px;}
+}
+
+@media screen and (max-width: 600px) {
+    header a {
+    float: none;
+    width: 100%;
+    }
+}
+
+h1,h2,h3,p{
+    color:white;
+}

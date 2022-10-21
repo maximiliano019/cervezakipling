@@ -15,25 +15,8 @@ body {
   background-attachment: fixed;
 }
 
-.fondo_variedades{
-  background-image: url(../img/.jpg);
-}
-
-.fondo_historia{
-  background-image: url();
-}
-
 .fondo_principal{
   background-image: url(../img/img_principal.jpg);
-
-}
-
-.fondo_tienda{
-  background-image: url(../img/img_proximamente.jpg);
-}
-
-.fondo_contacto{
-  background-image: url(../img/img_contacto.jpg);
 }
 
 
@@ -91,25 +74,6 @@ nav a img:hover {
     float: none;
     width: 100%;
   }
-}
-
-div{
-  padding: 2%;
-  text-align: left;
-}
-
-input[type=submit]{
-
-  color:orange; 
-  font-size:20px;
-  font-weight: bold; 
-  background-color:black;
-
-}
-
-label{
-  color:white;
-  font-weight: bold;
 }
 
 h1,h2,h3,p{
