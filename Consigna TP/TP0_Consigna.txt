@@ -11,30 +11,30 @@ Cada grupo deberá designar un representante de forma tal de establecer contacto
 ¿Qué hay que entregar?
 El TPO deberá cumplir con los siguientes requisitos:
 -   Poseer al menos 4 páginas html, siendo su temática libre.  ------------- OK
-    En caso de ser un Sitio Web estilo One Page, el mismo deberá tener al menos 5 secciones. ----------- NO ES ONE PAGE. TIENE 4 SECCIONES
+    En caso de ser un Sitio Web estilo One Page, el mismo deberá tener al menos 5 secciones. ----------- NO ES ONE PAGE. TIENE 5 SECCIONES
 
--   Utilizar etiquetas semánticas para estructurar el sitio. --------- ( MAIN, SECTION, HEADER, NAV, ARTICLE, ASIDE, FOOTER ) -- CHEQUEAR
+-   Utilizar etiquetas semánticas para estructurar el sitio. --------- ( MAIN, SECTION, HEADER, NAV, ARTICLE, ASIDE, FOOTER ) -- OK
 
--   Contener un formulario de contacto con validación realizada mediante Javascript. ---- FALTA
+-   Contener un formulario de contacto con validación realizada mediante Javascript. ---- ESTA EL FORMULARIO FALTA JAVASCRIPT
 
     Opcional: el formulario podrá enviar un email utilizando algún servicio externo destinado para ello. --- LO VEMOS AL FINAL
 
--   Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o bien de Google Fonts. --- CREO QUE ESTA OK... CHEAQUEAR MAXI
+-   Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o bien de Google Fonts. ----------------- OK
 
--   Tener al menos una página totalmente responsive con 3 puntos de corte para 3 tamaños de dispositivos distintos. --- CREO QUE ESTA OK... CHEQUEAR MAXI
+-   Tener al menos una página totalmente responsive con 3 puntos de corte para 3 tamaños de dispositivos distintos. ------------- FALTA
 
 -   Incorporar al menos una animación, transformación o una transición (se deberá indicar en qué parte del 
-    sitio web fue incorporada la animación). ----------- CREO QUE ESTA OK.
+    sitio web fue incorporada la animación). ------------------------ OK
 
--   Poseer una estructura HTML maquetada con Flexbox y/o Grid. ----- NI IDEA
+-   Poseer una estructura HTML maquetada con Flexbox y/o Grid. ----- FALTA
 
--   Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al momento de entregar el TPO. -- NI IDEA
+-   Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al momento de entregar el TPO. -- FALTA
 
 -   En caso de querer utilizar Bootstrap (no es obligatorio), sólo podrá hacerlo en la página del formulario del sitio web. 
-    No se aceptarán proyectos desarrollados íntegramente en algún Framework de CSS (Bootstrap, Materialize, Tailwind o similar). -- FALTA PARA EL FORM
+    No se aceptarán proyectos desarrollados íntegramente en algún Framework de CSS (Bootstrap, Materialize, Tailwind o similar). ------ NO HACE FALTA
 
 -   El desarrollo web deberá subirse a un servidor on-line para poder ser navegada por el Docente. 
-    Ejemplo: GitHub Pages, Netlify o similares. ------ OK
+    Ejemplo: GitHub Pages, Netlify o similares. ----------- OK
 
 -   Además de los aspectos técnicos mencionados anteriormente, el proyecto deberá contemplar aspectos de diseño los cuales 
     también serán evaluados por el Docente. Para eso se recomienda que vean el material disponible en el Aula Virtual. 

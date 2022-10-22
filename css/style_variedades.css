@@ -77,3 +77,13 @@ nav a img:hover {
 h1,h2,h3,p{
     color:white;
 }
+
+.container {
+    display: flex;
+    background: #CCC;
+    width: 100%;
+    align-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap; /* Comportamiento por defecto: nowrap */
+   }
+   
