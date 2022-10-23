@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kipling</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico">  
+        <link rel="stylesheet" href="../css/style_tragos.css">
+    </head>
+    <body class="fondo_tienda">
+        <header id="menuH">       
+        </header> 
+        <scroll-container>
+            <div id="grillaJson">       
+                <div class="container">
+                    <table class="table table-striped">
+                        <thead>
+                            <th>Nombre</th>
+                            <th></th>
+                        </thead>
+                        <tr v-for="trago in drinks">
+                            <td>{{trago.strDrink}} </td>
+                            <td>
+                                <img width="100" :src="trago.strDrinkThumb" :alt="trago.strDrink">
+                            <td>
+                        </tr>            
+                    </table> 
+                </div>        
+            </div>
+        </scroll-container>
+        <footer id="menuF">                    
+        </footer>
+        <script src="../js/menu.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="../js/tragos.js"></script>
+    </body>
+</html>
