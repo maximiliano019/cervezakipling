@@ -14,8 +14,8 @@ body {
     background-attachment: fixed;
 }
 
-.fondo_historia{
-    background-image: url();
+.fondo_nosotros{
+    background-image: url(../img/);
 }
 
 header > * {
