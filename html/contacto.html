@@ -12,40 +12,42 @@
         <header id="menuH">            
         </header> 
         <main>
-            <form method="" action="">
+            <form method = "post" id = "form">
                 <div><h1>Por cualquier consulta, escribinos!</h1><br><br>
     
                 <label>Nombre:</label>
-                <input type="text" name="varNombre" placeholder="" required>
+                <input type = "text" name = "varNombre" id = "varNombre" maxlength="50" required>
                 <br><br>
                 
                 <label>Apellido:</label>
-                <input type="text" name="varApellido" placeholder="" required>
+                <input type = "text" name = "varApellido" id = "varApellido" maxlength="50" required>
                 <br><br>        
     
                 <label>N° Documento:</label>
-                <input type="number" name="varNroDoc" placeholder="" required>
+                <input type = "number" name = "varNroDoc" id = "varNroDoc" required>
                 <br><br>
     
                 <label>Teléfono:</label>
-                <input type="number" name="varTelefono" placeholder="" required>
+                <input type = "number" name = "varTelefono" id = "varTelefono" required>
                 <br><br>
     
                 <label>E-Mail:</label>
-                <input type="email" name="varEmail" placeholder="" required>
+                <input type = "email" name = "varEmail" id = "varEmail" required>
                 <br><br>
                 
                 <label>Mensaje:</label>
-                <textarea name="varMensaje" rows="5" cols="50"></textarea>
+                <textarea name="varMensaje" id = "varMensaje" rows="5" cols="50" required></textarea>
                 <br><br>
                 <br><br>
                 
                 <input type="submit" name="btnEnviar" value="Enviar Formulario"></div>
                 <br><br>
+                <p id="errores"></p>
             </form>            
         </main>
         <footer id="menuF">
         </footer>
         <script src="../js/menu.js"></script>
+        <script src="../js/formulario.js"></script>
     </body>
 </html>
