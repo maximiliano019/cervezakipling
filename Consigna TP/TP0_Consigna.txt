@@ -15,7 +15,7 @@ El TPO deberá cumplir con los siguientes requisitos:
 
 -   Utilizar etiquetas semánticas para estructurar el sitio. --------- ( MAIN, SECTION, HEADER, NAV, ARTICLE, ASIDE, FOOTER ) -- OK
 
--   Contener un formulario de contacto con validación realizada mediante Javascript. ---- ESTA EL FORMULARIO FALTA JAVASCRIPT
+-   Contener un formulario de contacto con validación realizada mediante Javascript. ----------------------- OK
 
     Opcional: el formulario podrá enviar un email utilizando algún servicio externo destinado para ello. --- LO VEMOS AL FINAL
 
