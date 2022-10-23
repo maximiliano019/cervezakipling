@@ -15,7 +15,7 @@ body {
 }
 
 .fondo_nosotros{
-    background-image: url(../img/img_nosotros1.jpg);
+    background-image: url(../img/img_nosotros3.jpg);
 }
 
 header > * {
@@ -82,26 +82,33 @@ nav a img {
     height:25px; 
 }
 
-.contenedor {
-    padding-top: 5%;
+.contenedor {    
 	width: 95%;
 	max-width: 1000px;
 	margin: 20px auto;
 	display: grid;
 	grid-gap: 20px;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, auto);
-	grid-template-areas: "auto auto auto"
-						 "contenido contenido contenido"
-						 "sidebar sidebar sidebar";
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "header header"
+						 "contenido contenido"
+						 "sidebar sidebar"
+                         "footer footer";
 }
 
 .contenedor > div,
+.contenedor .header,
 .contenedor .contenido,
-.contenedor .sidebar {
+.contenedor .sidebar,
+.contenedor .footer {
 	background: rgba(0, 0, 0, 0.459);
 	padding: 20px;
 	border-radius: 4px;
+}
+
+.contenedor .header {
+	grid-area: header;
+    text-align: center;
 }
 
 .contenedor .contenido {
@@ -121,9 +128,9 @@ nav a img {
 
 @media screen and (max-width: 768px){
 	.contenedor {
-		grid-template-areas: "header header header"
-						 "contenido contenido contenido"
-						 "sidebar sidebar sidebar"
-						 "footer footer footer";
+		grid-template-areas: "header header"
+						     "contenido contenido"
+						     "sidebar sidebar"
+						     "footer footer";
 	}
 }
