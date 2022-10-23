@@ -117,4 +117,15 @@ scroll-page {
     justify-content: center;
     height: 100%;
     font-size: 5em;
- }
+}
+
+span{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+.fondo_tragos{
+    background-image: url(../img/img_tragos.jpg);
+}

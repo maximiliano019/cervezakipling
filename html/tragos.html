@@ -10,16 +10,15 @@
         <link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico">  
         <link rel="stylesheet" href="../css/style_tragos.css">
     </head>
-    <body class="fondo_tienda">
+    <body class="fondo_tragos">
         <header id="menuH">       
         </header> 
         <scroll-container>
             <div id="grillaJson">       
                 <div class="container">
+                    <span>LISTA DE TRAGOS</span>
                     <table class="table table-striped">
                         <thead>
-                            <th>Nombre</th>
-                            <th></th>
                         </thead>
                         <tr v-for="trago in drinks">
                             <td>{{trago.strDrink}} </td>
