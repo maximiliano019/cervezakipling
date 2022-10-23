@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: orange;
+    background-color: grey;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ header > * {
     width: 100%;
     position: fixed; 
     text-align: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.329);
 }
 
 header a {
@@ -33,7 +33,7 @@ header a {
 }
 
 header a:hover {
-    background-color: orange;
+    background-color: #fbcb09;
     color: black;
     font-weight: bold;
 }
@@ -43,13 +43,13 @@ main {
 }
 
 footer {
-    background-color:black;
+    background-color:rgba(0, 0, 0, 0.329);
     position: fixed;
     bottom: 0px;
     width: 100%;
     text-align: center;
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
 }
 
 nav a img {
@@ -76,4 +76,9 @@ nav a img:hover {
 
 h1,h2,h3,p{
     color:white;
+}
+
+label{
+    color:white;
+    text-shadow: 0.1em 0.1em 0.1em black
 }
