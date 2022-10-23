@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum scale=12.0">
         <link rel="shortcut icon" type="image/x-icon" href="./img/logo.ico">    
         <link rel="stylesheet" href="../css/style_contacto.css">
         <title>Kipling</title>
@@ -11,8 +11,8 @@
     <body class="fondo_contacto">
         <header id="menuH">            
         </header> 
-        <main>
-            <form method = "post" id = "form">
+        <main class="contenedor">
+            <!--<form method = "post" id = "form">
                 <div><h1>Por cualquier consulta, escribinos!</h1><br><br>
     
                 <label>Nombre:</label>
@@ -43,10 +43,41 @@
                 <input type="submit" name="btnEnviar" value="Enviar Formulario"></div>
                 <br><br>
                 <p id="errores"></p>
-            </form>            
+            </form>-->
+            <form method="post" id="form" class="form">
+                <div class="form-header">
+                <h1 class="form-title"><span>Por cualquier consulta, escribinos !</span></h1><br>
+                </div>
+        
+
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" name = "varNombre"  id="varNombre" class="form-input" maxlength="50" required>
+
+                <label for="apellido" class="form-label">Apellido:</label>
+                <input type="text" name = "varApellido" id="varApellido" class="form-input" maxlength="50"  required>
+
+                <label for="email" class="form-label">E-Mail:</label>
+                <input type="email" class="form-input" name = "varEmail" id="varEmail" required>
+
+                <label for="telefono" class="form-label">Número de Teléfono:</label>
+                <input type="number" name = "varTelefono" id="varTelefono" class="form-input" required>
+            
+                <label for="dni" class="form-label">Nùmero de Documento:</label>
+                <input type="number" class="form-input" name = "varNroDoc" id="varNroDoc" required>
+
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea name="varMensaje" id = "varMensaje" class="form-textarea" required>
+                </textarea>
+
+                <input type="submit" class="btn-submit" value="Enviar Formulario">
+                <br><br>
+                <p id="errores"></p>
+            </form>          
         </main>
+
         <footer id="menuF">
         </footer>
+        
         <script src="../js/menu.js"></script>
         <script src="../js/formulario.js"></script>
     </body>

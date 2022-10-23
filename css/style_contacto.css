@@ -15,49 +15,6 @@ body {
     background-attachment: fixed;
 }
 
-.fondo_contacto{
-    background-image: url(../img/img_contacto4.jpg);
-    background-image: auto;
-}
-
-.formulario{
-    text-align: left;
-}
-
-input[type=submit]{
-
-    color:white; 
-    font-size:20px;
-    font-weight: bold; 
-    background-color:rgba(0, 0, 0, 0.592);
-    border-radius:10PX;
-    width:250px;
-}
-
-input[type=text],[type=email]{
-    color:#fbcb09; 
-    font-size:15px;
-    font-weight: bold; 
-    background-color:rgba(0, 0, 0, 0.592);
-    border-radius:10px;
-    width:300px;
-    height:auto;
-    text-align: center;
-}
-
-input[type=number]{
-    color:#fbcb09; 
-    font-size:15px;
-    font-weight: bold; 
-    background-color:rgba(0, 0, 0, 0.592);
-    border-radius:10px;
-    width:150px;
-    height:auto;
-    text-align: center;
-
-}
-
-
 header > * {
     width: 100%;
     position: fixed; 
@@ -79,7 +36,7 @@ header a:hover {
 }
 
 main {
-    padding: 7%; 
+    padding: 4%; 
 }
 
 footer {
@@ -132,4 +89,80 @@ p{
 h1,h2,h3,p{
     color:white;
     text-shadow: 0.1em 0.1em 0.1em black
+}
+
+
+body {
+    background-image: url(../img/img_contacto4.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor .form .form-header .form-title{
+    font-weight: normal;
+    font-family: sans-serif;
+    color: yellow;
+    text-align: center;
+    padding: 14px 0;
+
+}
+
+.contenedor .form .form-header .form-title span {
+    color:white;
+}
+
+.contenedor .form{
+    background: rgba(0, 0, 0, 0.473);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+.contenedor .form .form-label{
+    display: block;
+    color:yellow;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.contenedor .form .form-input, .form-textarea{
+    background-color: rgba(0, 0, 0, 0.432);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid yellow;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor .form .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.contenedor .form .btn-submit{
+    width: 100%;
+    font-family: arial, sans-serif;
+    outline: none;
+    background: yellow;
+    font-size: 16px;
+    border: white;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all 5.s ease;
+}
+
+.contenedor .form .btn-submit:hover{
+    background: rgba(255, 255, 0, 0.514);
 }

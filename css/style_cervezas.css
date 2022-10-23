@@ -39,7 +39,7 @@ header a:hover {
 }
 
 main {
-    padding: 7%; 
+    padding: 4%; 
 }
 
 footer {
@@ -78,6 +78,7 @@ nav a img:hover {
     text-align:center;
     color:black;
     font-weight: bold;
+    font-size: 25px;
     text-shadow: 0.1em 0.1em 0.2em white
     
 }
@@ -86,6 +87,7 @@ p,th{
     text-align:left;
     color:black;
     font-weight: bold;
+    font-size: 25px;
     text-shadow: 0.1em 0.1em 0.1em white
     
 }
