@@ -15,7 +15,7 @@ body {
 }
 
 .fondo_nosotros{
-    background-image: url(../img/);
+    background-image: url(../img/img_nosotros.jpg);
 }
 
 header > * {
@@ -52,10 +52,21 @@ footer {
     padding: 5px;
 }
 
-nav a img {
-    height:25px; 
+@media screen and (max-width: 600px) {
+    header a {
+    float: none;
+    width: 100%;
+    }
 }
 
+h1,h2,h3, p, h4{
+    color:white;
+}
+
+label{
+    color:white;
+    text-shadow: 0.1em 0.1em 0.1em black
+}
 
 nav a img:hover {
     animation-name: tamanioDinamicoImagen;
@@ -67,18 +78,52 @@ nav a img:hover {
     to {height:50px;}
 }
 
-@media screen and (max-width: 600px) {
-    header a {
-    float: none;
-    width: 100%;
-    }
+nav a img {
+    height:25px; 
 }
 
-h1,h2,h3,p{
-    color:white;
+.contenedor {
+    padding-top: 5%;
+	width: 95%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "auto auto auto"
+						 "contenido contenido contenido"
+						 "sidebar sidebar sidebar";
 }
 
-label{
-    color:white;
-    text-shadow: 0.1em 0.1em 0.1em black
+.contenedor > div,
+.contenedor .contenido,
+.contenedor .sidebar {
+	background: rgba(0, 0, 0, 0.459);
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .contenido {
+	grid-area: contenido;
+}
+
+.contenedor .sidebar {
+	grid-column: 3 / 4;
+	background: rgba(0, 0, 0, 0.459);
+	text-align: left;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	min-height: 100px;
+	grid-area: sidebar;
+}
+
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "sidebar sidebar sidebar"
+						 "footer footer footer";
+	}
 }

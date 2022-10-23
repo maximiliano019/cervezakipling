@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fondo_nosotros{
+    background-image: url(../img/);
+}
+
+header > * {
+    width: 100%;
+    position: fixed; 
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+header a:hover {
+    background-color: #fbcb09;
+    color: black;
+    font-weight: bold;
+}
+
+main {
+    padding: 7%; 
+}
+
+footer {
+    background-color:rgba(0, 0, 0, 0.329);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+}
+
+nav a img {
+    height:25px; 
+}
+
+
+nav a img:hover {
+    animation-name: tamanioDinamicoImagen;
+    animation-duration: 1s;
+}
+
+@keyframes tamanioDinamicoImagen {
+    from {height:25px;}
+    to {height:50px;}
+}
+
+@media screen and (max-width: 600px) {
+    header a {
+    float: none;
+    width: 100%;
+    }
+}
+
+h1,h2,h3,p{
+    color:white;
+}
+
+label{
+    color:white;
+    text-shadow: 0.1em 0.1em 0.1em black
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;       
+}
+
+.tarjeta{
+    width: 300px;
+    border: 1px solid rgb(176, 173, 173);
+    border-radius: 5px;
+}
+
+scroll-container {
+    padding-top: 4%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+scroll-container {
+    display: block;
+    /*width: 100%;*/
+    height: auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+scroll-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 5em;
+ }
