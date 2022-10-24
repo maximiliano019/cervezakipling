@@ -11,12 +11,8 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.fondo_nosotros{
-    background-image: url(../img/);
-}
+    background-attachment: fixed;    
+}   
 
 header > * {
     width: 100%;
@@ -123,6 +119,13 @@ span{
 }
 
 .fondo_tragos{
-    background-image: url(../img/img_tragos.jpg);
-    backdrop-filter: brightness(90%);
+    background-image: url(../img/img_tragos1.jpg);
+    backdrop-filter: brightness(90%);    
+}
+
+td, tr{
+    color: black;
+    text-shadow: white;
+    font-weight: bold; 
+    font-size: 20px;  
 }
