@@ -80,11 +80,11 @@ nav a img:hover {
     color:black;
     font-weight: bold;
     font-size: 25px;
-    text-shadow: 0.1em 0.1em 0.2em white
+    text-shadow: 0.1em 0.1em 0.2em #fbcb09
     
 }
 
-p,th{
+p{
     text-align:left;
     color:black;
     font-weight: bold;
@@ -97,3 +97,11 @@ label{
     color:white;
     text-shadow: 0.1em 0.1em 0.1em black
 }
+
+th{text-align:left;
+    color:#fbcb09;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 0.1em 0.1em 0.1em black
+}
+
