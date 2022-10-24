@@ -16,7 +16,6 @@ body {
 
 .fondo_cervezas{
     background-image: url(../img/img_tragos.jpg);
-    backdrop-filter: brightness(90%);
 }
 
 header > * {
@@ -45,8 +44,8 @@ main {
 
 footer {
     background-color:rgba(0, 0, 0, 0.329);
-    position: sticky;
-    bottom: -100px;
+    position: fixed;
+    bottom: 0px;
     width: 100%;
     text-align: center;
     display: inline-block;

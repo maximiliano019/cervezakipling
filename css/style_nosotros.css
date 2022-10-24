@@ -7,15 +7,14 @@
 }
 
 body {
-    background-size: cover;
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    /*max-width: 100%;*/
-    background-attachment: no-repeat;
 }
 
 .fondo_nosotros{
-    background-image: url(../img/img_nosotros3.jpg);
+    background-image: url(../img/img_nosotros198.jpg);
 }
 
 header > * {
@@ -39,8 +38,8 @@ header a:hover {
 }
 
 main {
-    padding: 7%;
-    text-align: center; 
+    padding: 6%;
+    text-align: left; 
 }
 
 footer {
@@ -76,6 +75,7 @@ nav a img:hover {
 
 h1,h2,h3,p{
     color:white;
+    text-shadow: 0.1em 0.1em 0.1em black
     
 }
 
@@ -85,7 +85,7 @@ label{
 }
 
 h4{
-    text-align:center;
+    text-align:left;
     color:white;
     font-weight: bold;
     font-size: 40px;

@@ -7,7 +7,6 @@
 }
 
 body {
-    background-color: grey;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,7 +38,7 @@ header a:hover {
 }
 
 main {
-    padding: 7%; 
+    padding: 4%; 
 }
 
 footer {

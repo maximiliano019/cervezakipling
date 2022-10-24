@@ -35,8 +35,8 @@ header a:hover {
 
 footer {
     background-color:rgba(0, 0, 0, 0.329);
-    position: sticky;
-    bottom: -100;
+    position: fixed;
+    bottom: 0px;
     width: 100%;
     text-align: center;
     display: inline-block;
@@ -110,22 +110,31 @@ scroll-page {
     font-size: 5em;
 }
 
-span{
-    text-align: center;
-    font-weight: bold;
-    font-size: 50px;
-    text-shadow: 0.1em 0.1em 0.1em white
-    
-}
-
 .fondo_tragos{
-    background-image: url(../img/img_tragos1.jpg);
+    background-image: url(../img/img_tragos3.png);
     backdrop-filter: brightness(90%);    
 }
 
-td, tr{
-    color: black;
+tr > *{
+    color: white;
+    text-align: right;
     text-shadow: white;
     font-weight: bold; 
     font-size: 20px;  
+}
+
+td > *{
+    color: white;
+    text-align: right;
+    text-shadow: white;
+    font-weight: bold; 
+    font-size: 20px;  
+}
+
+.titulo{
+    text-align:center;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 0.1em 0.1em 0.2em black
 }
