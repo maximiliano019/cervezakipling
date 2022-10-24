@@ -60,9 +60,19 @@ footer {
     }
 }
 
-h1,h2,h3, p, h4{
+h1,h2,h3,p{
     color:white;
+    
 }
+
+h4{
+    text-align:center;
+    color:white;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
 
 label{
     color:white;
