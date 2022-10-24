@@ -6,17 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kipling</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico">  
         <link rel="stylesheet" href="../css/style_tragos.css">
     </head>
     <body class="fondo_tragos">
         <header id="menuH">       
         </header> 
-        <scroll-container>
+        <main>
             <div id="grillaJson">       
                 <div class="container">
                     <table class="table table-striped">
+                        <th colspan="2" ><h1>Nuestros Tragos</h1><br></th>
                         <tr v-for="trago in drinks">
                             <td>{{trago.strDrink}} </td>
                             <td>
@@ -26,7 +27,7 @@
                     </table> 
                 </div>        
             </div>
-        </scroll-container>
+        </main>
         <footer id="menuF">                    
         </footer>
         <script src="../js/menu.js"></script>

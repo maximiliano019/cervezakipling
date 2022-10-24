@@ -34,7 +34,7 @@ header a:hover {
 }
 
 footer {
-    background-color:rgba(0, 0, 0, 0.329);
+    background-color:rgb(0, 0, 0);
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -46,7 +46,6 @@ footer {
 nav a img {
     height:25px; 
 }
-
 
 nav a img:hover {
     animation-name: tamanioDinamicoImagen;
@@ -67,6 +66,7 @@ nav a img:hover {
 
 h1,h2,h3,p{
     color:white;
+    
 }
 
 label{
@@ -74,67 +74,30 @@ label{
     text-shadow: 0.1em 0.1em 0.1em black
 }
 
-.container{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;       
-}
-
-.tarjeta{
-    width: 300px;
-    border: 1px solid rgb(176, 173, 173);
-    border-radius: 5px;
-}
-
-scroll-container {
-    padding-top: 2%;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-scroll-container {
-    display: block;
-    /*width: 100%;*/
-    height: auto;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-}
-
-scroll-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-size: 5em;
-}
-
 .fondo_tragos{
-    background-image: url(../img/img_tragos3.png);
-    backdrop-filter: brightness(90%);    
+    background-image: url(../img/img_tragos3.png);   
 }
 
-tr > *{
+tr > *, td > *{
     color: white;
     text-align: right;
     text-shadow: white;
     font-weight: bold; 
-    font-size: 20px;  
+    font-size: 20px;
+    border-bottom: black; 
 }
 
-td > *{
-    color: white;
-    text-align: right;
-    text-shadow: white;
-    font-weight: bold; 
-    font-size: 20px;  
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+color: white;
+border-bottom: black;
+box-shadow: none;
 }
 
-.titulo{
-    text-align:center;
-    color: white;
-    font-weight: bold;
-    font-size: 50px;
-    text-shadow: 0.1em 0.1em 0.2em black
+main{
+    padding: 4%;
+}
+
+th{
+    text-align: center;
 }
