@@ -10,7 +10,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    max-width: 100%;
+    /*max-width: 100%;*/
     background-attachment: no-repeat;
 }
 
@@ -20,7 +20,7 @@ body {
 
 header > * {
     width: 100%;
-    position: absolute; 
+    position: fixed; 
     text-align: center;
     background-color: rgba(0, 0, 0, 0.329);
 }
@@ -39,7 +39,8 @@ header a:hover {
 }
 
 main {
-    padding: 7%; 
+    padding: 7%;
+    text-align: center; 
 }
 
 footer {
@@ -52,6 +53,19 @@ footer {
     padding: 5px;
 }
 
+nav a img {
+    height:25px; 
+}
+
+nav a img:hover {
+    animation-name: tamanioDinamicoImagen;
+    animation-duration: 1s;
+}
+
+@keyframes tamanioDinamicoImagen {
+    from {height:25px;}
+    to {height:50px;}
+}
 
 @media screen and (max-width: 600px) {
     header a {
@@ -65,86 +79,15 @@ h1,h2,h3,p{
     
 }
 
+label{
+    color:white;
+    text-shadow: 0.1em 0.1em 0.1em black
+}
+
 h4{
     text-align:center;
     color:white;
     font-weight: bold;
     font-size: 40px;
     text-shadow: 0.1em 0.1em 0.2em black
-}
-
-
-label{
-    color:white;
-    text-shadow: 0.1em 0.1em 0.1em black
-}
-
-nav a img:hover {
-    animation-name: tamanioDinamicoImagen;
-    animation-duration: 1s;
-}
-
-@keyframes tamanioDinamicoImagen {
-    from {height:25px;}
-    to {height:50px;}
-}
-
-nav a img {
-    height:25px; 
-}
-
-div{
-    text-align: center;
-}
-/*
-.contenedor {    
-	width: 100%;
-	margin: center;
-	display: grid;
-	grid-gap: 20px;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(4, auto);
-	grid-template-areas: "header header"
-						 "contenido contenido"
-						 "sidebar sidebar"
-                         "footer footer";
-}
-/*
-.contenedor > div,
-.contenedor .header,
-.contenedor .contenido,
-.contenedor .sidebar,
-.contenedor .footer {
-	background: rgba(0, 0, 0, 0.459);
-	padding: 20px;
-	border-radius: 4px;
-}
-.contenedor .header {
-	grid-area: header;
-    text-align: center;
-}
-.contenedor .contenido {
-	grid-area: contenido;
-}
-/*
-.contenedor .sidebar {
-	grid-column: 3 / 4;
-	background: rgba(0, 0, 0, 0.459);
-	text-align: left;
-    position: bottom;
-	display: flex;
-	align-items: center;
-	justify-content: left;
-	min-height: 100px;
-	grid-area: sidebar;
-}
-
-/*
-@media screen and (max-width: 768px){
-	.contenedor {
-		grid-template-areas: "header header"
-						     "contenido contenido"
-						     "sidebar sidebar"
-						     "footer footer";
-	}
 }
