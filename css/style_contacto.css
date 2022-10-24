@@ -9,7 +9,10 @@ body {
     background-image: url(../img/img_contacto4.jpg);
     -webkit-background-size: cover;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
+    max-width: 100%;
+    background-attachment: no-repeat;
 }
 
 header > * {

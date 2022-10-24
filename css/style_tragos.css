@@ -37,10 +37,6 @@ header a:hover {
     font-weight: bold;
 }
 
-main {
-    padding: 7%; 
-}
-
 footer {
     background-color:rgba(0, 0, 0, 0.329);
     position: sticky;

@@ -7,11 +7,11 @@
 }
 
 body {
-    background-color: grey;
-    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
+    max-width: 100%;
+    background-attachment: no-repeat;
 }
 
 .fondo_nosotros{
@@ -20,7 +20,7 @@ body {
 
 header > * {
     width: 100%;
-    position: static; 
+    position: absolute; 
     text-align: center;
     background-color: rgba(0, 0, 0, 0.329);
 }
@@ -44,13 +44,14 @@ main {
 
 footer {
     background-color:rgba(0, 0, 0, 0.329);
-    position: sticky;
-    bottom: -100px;
+    position: fixed;
+    bottom: 0px;
     width: 100%;
     text-align: center;
     display: inline-block;
     padding: 5px;
 }
+
 
 @media screen and (max-width: 600px) {
     header a {
@@ -82,10 +83,13 @@ nav a img {
     height:25px; 
 }
 
+div{
+    text-align: center;
+}
+/*
 .contenedor {    
-	width: 95%;
-	max-width: 1000px;
-	margin: 20px auto;
+	width: 100%;
+	margin: center;
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: repeat(2, 1fr);
@@ -95,7 +99,7 @@ nav a img {
 						 "sidebar sidebar"
                          "footer footer";
 }
-
+/*
 .contenedor > div,
 .contenedor .header,
 .contenedor .contenido,
@@ -105,20 +109,19 @@ nav a img {
 	padding: 20px;
 	border-radius: 4px;
 }
-
 .contenedor .header {
 	grid-area: header;
     text-align: center;
 }
-
 .contenedor .contenido {
 	grid-area: contenido;
 }
-
+/*
 .contenedor .sidebar {
 	grid-column: 3 / 4;
 	background: rgba(0, 0, 0, 0.459);
 	text-align: left;
+    position: bottom;
 	display: flex;
 	align-items: center;
 	justify-content: left;
@@ -126,6 +129,7 @@ nav a img {
 	grid-area: sidebar;
 }
 
+/*
 @media screen and (max-width: 768px){
 	.contenedor {
 		grid-template-areas: "header header"

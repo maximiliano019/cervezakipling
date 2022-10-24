@@ -16,35 +16,35 @@ form.addEventListener("submit",e=>{
     
     if(nombre.value.length < 2){
         warnings = warnings + `El nombre no es valido. `
-        warnings = warnings + `Debe tener mas de 2 caracteres <br>`
+        warnings = warnings + `Debe tener más de 2 caracteres. <br>`
         entrar = true
     }
 
     if(apellido.value.length < 2){
         warnings = warnings + `El apellido no es valido. `
-        warnings = warnings + `Debe tener mas de 2 caracteres <br>`
+        warnings = warnings + `Debe tener más de 2 caracteres. <br>`
         entrar = true
     }
 
     if(nrodoc.value.length < 7 || nrodoc.value.length > 10){
-        warnings = warnings + `Número de documento no es valido. `
-        warnings = warnings + `Debe tener mas de 6 caracteres <br>`
+        warnings = warnings + `El número de documento no es valido. `
+        warnings = warnings + `Debe tener más de 6 caracteres. <br>`
         entrar = true
     }
 
     if(telefono.value.length < 7){
-        warnings = warnings + `Telefono no es valido. `
-        warnings = warnings + `Debe tener mas de 6 caracteres <br>`
+        warnings = warnings + `El teléfono no es valido. `
+        warnings = warnings + `Debe tener más de 6 caracteres. <br>`
         entrar = true
     }
 
     if(!regExpreEmail.test(email.value)){
-        warnings = warnings + `El email no es valido <br>`
+        warnings = warnings + `El email no es valido. <br>`
         entrar = true
     }
     if(mensaje.value.length < 10){
-        warnings = warnings + `Mensaje no es valido. `
-        warnings = warnings + `Debe tener mas de 10 caracteres <br>`
+        warnings = warnings + `El mensaje no es valido. `
+        warnings = warnings + `Debe tener más de 10 caracteres. <br>`
         entrar = true
     }
     if (entrar){
