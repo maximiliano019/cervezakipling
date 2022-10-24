@@ -16,11 +16,12 @@ body {
 
 .fondo_cervezas{
     background-image: url(../img/img_cervezas.jpg);
+    backdrop-filter: brightness(90%);
 }
 
 header > * {
     width: 100%;
-    position: fixed; 
+    position: static; 
     text-align: center;
     background-color: rgba(0, 0, 0, 0.329);
 }
@@ -39,13 +40,13 @@ header a:hover {
 }
 
 main {
-    padding: 4%; 
+    padding: 2%; 
 }
 
 footer {
     background-color:rgba(0, 0, 0, 0.329);
-    position: fixed;
-    bottom: 0px;
+    position: sticky;
+    bottom: -100px;
     width: 100%;
     text-align: center;
     display: inline-block;
@@ -96,12 +97,3 @@ label{
     color:white;
     text-shadow: 0.1em 0.1em 0.1em black
 }
-/*
-.container {
-    display: flex;
-    background: #CCC;
-    width: 100%;
-    align-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap; /* Comportamiento por defecto: nowrap
-}  HABLAR CON MAXI*/

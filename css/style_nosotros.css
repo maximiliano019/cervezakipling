@@ -20,7 +20,7 @@ body {
 
 header > * {
     width: 100%;
-    position: fixed; 
+    position: static; 
     text-align: center;
     background-color: rgba(0, 0, 0, 0.329);
 }
@@ -44,8 +44,8 @@ main {
 
 footer {
     background-color:rgba(0, 0, 0, 0.329);
-    position: fixed;
-    bottom: 0px;
+    position: sticky;
+    bottom: -100px;
     width: 100%;
     text-align: center;
     display: inline-block;

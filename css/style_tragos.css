@@ -20,7 +20,6 @@ body {
 
 header > * {
     width: 100%;
-    position: fixed; 
     text-align: center;
     background-color: rgba(0, 0, 0, 0.329);
 }
@@ -44,8 +43,8 @@ main {
 
 footer {
     background-color:rgba(0, 0, 0, 0.329);
-    position: fixed;
-    bottom: 0px;
+    position: sticky;
+    bottom: -100;
     width: 100%;
     text-align: center;
     display: inline-block;
@@ -97,7 +96,7 @@ label{
 }
 
 scroll-container {
-    padding-top: 4%;
+    padding-top: 2%;
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -122,10 +121,12 @@ scroll-page {
 span{
     text-align: center;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 50px;
+    text-shadow: 0.1em 0.1em 0.1em white
     
 }
 
 .fondo_tragos{
     background-image: url(../img/img_tragos.jpg);
+    backdrop-filter: brightness(90%);
 }

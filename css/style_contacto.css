@@ -5,19 +5,16 @@
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
-
 body {
     background-image: url(../img/img_contacto4.jpg);
-    background-color: grey;
-    background-position: center;
+    -webkit-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 header > * {
     width: 100%;
-    position: fixed; 
+    position: absolute; 
     text-align: center;
     background-color: rgba(0, 0, 0, 0.329);
 }
@@ -41,8 +38,8 @@ main {
 
 footer {
     background-color:rgba(0, 0, 0, 0.329);
-    position: fixed;
-    bottom: 0px;
+    position: sticky;
+    bottom: -100px;
     width: 100%;
     text-align: center;
     display: inline-block;
@@ -71,38 +68,15 @@ nav a img:hover {
     }
 }
 
-div{
-    padding: 2%;
-    text-align: left;
-}
-
 label{
     color:white;
     text-shadow: 0.1em 0.1em 0.1em black
 }
 
-p{
-    color:white;
-    text-shadow: 0.1em 0.1em 0.1em black
-}
-
-h1,h2,h3,p{
-    color:white;
-    text-shadow: 0.1em 0.1em 0.1em black
-}
-
-
-body {
-    background-image: url(../img/img_contacto4.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .contenedor .form .form-header .form-title{
     font-weight: normal;
     font-family: sans-serif;
-    color: yellow;
+    color: red;
     text-align: center;
     padding: 14px 0;
 
@@ -110,13 +84,14 @@ body {
 
 .contenedor .form .form-header .form-title span {
     color:white;
+    text-shadow: 0.1em 0.1em 0.1em black
 }
 
 .contenedor .form{
     background: rgba(0, 0, 0, 0.473);
     width: 90%;
     max-width: 650px;
-    margin: auto;
+    margin: left;
     padding: 5px 35px;
     margin-top: 30px;
     padding-bottom: 30px;
@@ -125,7 +100,7 @@ body {
 
 .contenedor .form .form-label{
     display: block;
-    color:yellow;
+    color:#fbcb09;
     font-size: 16px;
     font-family: Arial, sans-serif;
     position: relative;
@@ -135,7 +110,7 @@ body {
     background-color: rgba(0, 0, 0, 0.432);
     border: none;
     outline: none;
-    border-bottom: 2px solid yellow;
+    border-bottom: 2px solid #fbcb09;
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
@@ -155,14 +130,19 @@ body {
     width: 100%;
     font-family: arial, sans-serif;
     outline: none;
-    background: yellow;
+    background: #fbcb09;
     font-size: 16px;
     border: white;
     padding: 15px 0;
     cursor: pointer;
     transition: all 5.s ease;
+    font-weight: bold;
+    color: black;
 }
 
 .contenedor .form .btn-submit:hover{
-    background: rgba(255, 255, 0, 0.514);
+    background: #fbcb0976;
+    font-weight: bold;
+    color:white;
+
 }
