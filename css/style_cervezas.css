@@ -15,7 +15,7 @@ body {
 }
 
 .fondo_cervezas{
-    background-image: url(../img/img_tragos.jpg);
+    background-image: url(../img/img_cervezas650.jpg);
 }
 
 header > * {
@@ -79,14 +79,13 @@ nav a img:hover {
     color:black;
     font-weight: bold;
     font-size: 25px;
-    text-shadow: 0.1em 0.1em 0.2em #fbcb09
+    text-shadow: 0.1em 0.1em 0.2em white
     
 }
 
 p{
     text-align:left;
     color:black;
-    font-weight: bold;
     font-size: 25px;
     text-shadow: 0.1em 0.1em 0.1em white
     
